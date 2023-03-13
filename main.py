@@ -17,7 +17,7 @@ async def ping(ctx):
 @bot.command()
 async def hello(ctx):
     user = ctx.author
-    embed = discord.Embed(title="👋 Hola!", descriptionf="Hello {user.display_name}!", color=0xFF5733)
+    embed = discord.Embed(title="👋 Hola!", description=f"Hello {user.display_name}!", color=0xFF5733)
     embed.set_footer(text="This was sent by the Developer Team Bot!")
     await ctx.send(embed=embed)
 bot.run(os.environ["DISCORD_TOKEN"])
